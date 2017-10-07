@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Easy App</string>
+    <string name="btn_txt_inc">ลดลง</string>
+    <string name="btn_txt_dec">เพิ่มขึ้น</string>
 </resources>
