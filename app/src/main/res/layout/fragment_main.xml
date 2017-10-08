@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
-    <!--content-->
 
+    <!--Content-->
     <LinearLayout
-        android:layout_margin="50dp"
+        android:padding="16dp"
+        android:background="#82ffffff"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
 
-        <!--title-->
+        <!--Title-->
         <TextView
             android:textColor="@color/colorPrimaryDark"
             android:textStyle="bold"
             android:textSize="@dimen/h1"
             android:text="My Image"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-
-            />
+            android:layout_height="wrap_content" />
 
         <!--Image-->
         <ImageView
+            android:id="@+id/imvImage"
             android:layout_margin="15dp"
-            android:src="@drawable/flower2"
+            android:src="@drawable/flower1"
             android:layout_width="@dimen/icon"
-            android:layout_height="@dimen/icon"
+            android:layout_height="@dimen/icon" />
 
-            />
-
-        <!--controller-->
+        <!--Controller-->
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -38,40 +39,30 @@
 
             <!--Decrease-->
             <Button
-                android:layout_margin="3dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_weight="1"
-                android:text="@string/btn_txt_dec"
                 android:background="@color/colorPrimary"
-                android:layout_width="@dimen/btn_width"
-                android:layout_height="wrap_content" />
+                android:id="@+id/btnDecrease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_txt_dec" />
 
-            <!--increase-->
+            <!--Increase-->
             <Button
-                android:layout_margin="3dp"
+                android:id="@+id/btnIncrease"
+                android:layout_marginLeft="3dp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
-                android:layout_weight="1"
-                android:text="@string/btn_txt_inc"
                 android:background="@color/colorPrimary"
-                android:layout_width="@dimen/btn_width"
+                android:text="@string/btn_txt_inc"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content" />
-
-
 
 
         </LinearLayout>
 
-
-
-
-
-
-
-
-
-
-</LinearLayout>
+    </LinearLayout>
 
 </RelativeLayout>
